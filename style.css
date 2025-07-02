@@ -1,0 +1,195 @@
+/* リセットCSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* コンテンツ幅 */
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 4%;
+}
+
+/* ナビバー */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 270px;
+}
+
+.nav-list {
+  display: flex;
+  gap: 30px;
+}
+
+@media(max-width:600px) {
+  .nav{
+    flex-direction: column;
+    height: auto;
+    margin: 20px 0 10px;
+  }
+  .logo{
+    margin-bottom: 10px;
+  }
+}
+
+/* メインビジュアル */
+.mv {
+  height: 420px;
+  object-fit: cover;
+}
+
+/* about */
+.about-title {
+  margin: 80px auto 65px;
+  text-align: center;
+}
+
+@media(max-width:600px) {
+  .about-title{
+    margin: 80px 0 40px;
+  }
+}
+
+/* works */
+.works-title {
+  margin: 130px auto 68px;
+  text-align: center;
+}
+
+.img-box {
+  display: flex;
+  gap: 29.8px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.img-box img {
+  width: auto;
+  height: 165px;
+}
+
+@media(max-width:600px){
+  .works-title{
+    margin: 70px 0 43px;
+  }
+
+  .img-box img{
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* news */
+.news-title {
+  margin: 150px auto 65px;
+  text-align: center;
+}
+
+.news-item {
+  display: flex;
+  gap: 78px;
+  border-top: 1px solid #c8c8c8;
+  border-bottom: 1px solid #c8c8c8;
+  padding: 15px 0;
+}
+
+@media(max-width:600px){
+  .news-title{
+    margin: 90px 0 40px;
+  }
+
+  .news-item{
+    flex-direction: column;
+    gap: 0;
+  }
+
+}
+
+/* contact */
+.contact-title{
+  margin: 130px auto 65px;
+  text-align: center;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.form-row label {
+    text-align: left;
+}
+
+.form-row input {
+    width: 730px;
+    height: 44px;
+}
+
+.form-row textarea {
+    width: 730px;
+    height: 166px;
+}
+
+button{
+  display: block;
+  margin: 30px auto 130px;
+  width: 200px;
+  height: 52px;
+  color: #fff;
+  background-color: #000;
+}
+button:hover{
+  color: #000;
+  background-color: #fff;
+}
+
+@media(max-width:600px){
+  .contact-title{
+    margin: 70px 0 40px;
+   }
+
+   .form-row{
+    flex-direction: column;
+   }
+
+   .form-row input{
+    width: 100%;
+   }
+
+   .form-row textarea{
+    width: 100%;
+   }
+
+   button{
+    margin: 30px auto 70px;
+   }
+}
+
+/* footer */
+footer{
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
