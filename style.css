@@ -29,7 +29,7 @@ a {
 }
 
 /* 共通CSS */
-.section-title{
+.section-title {
   margin: 0 auto;
   text-align: center;
 }
@@ -48,12 +48,13 @@ a {
 }
 
 @media(max-width:600px) {
-  .nav{
+  .nav {
     flex-direction: column;
     height: auto;
     margin: 20px 0 10px;
   }
-  .logo{
+
+  .logo {
     margin-bottom: 10px;
   }
 }
@@ -70,16 +71,16 @@ a {
   margin-bottom: 130px;
 }
 
-.about-section h2{
+.about-section h2 {
   margin-bottom: 65px;
 }
 
 @media(max-width:600px) {
-  .about-section{
+  .about-section {
     margin-bottom: 70px;
   }
 
-  .about-section h2{
+  .about-section h2 {
     margin-bottom: 40px;
   }
 }
@@ -89,34 +90,48 @@ a {
   margin-bottom: 150px;
 }
 
-.works-section h2{
+.works-section h2 {
   margin-bottom: 68px;
 }
 
-.img-box {
+.img-container {
   display: flex;
-  gap: 29.8px;
   flex-wrap: wrap;
-  justify-content: center;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+.img-box {
+  display: contents;
+}
+
+.img-box li {
+  width: calc((100% - 60px) / 3);
 }
 
 .img-box img {
-  width: auto;
-  height: 165px;
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
-@media(max-width:600px){
-  .works-section{
+@media (max-width: 900px) {
+  .img-box li {
+    width: calc((100% - 30px) / 2);
+  }
+}
+
+@media(max-width:600px) {
+  .works-section {
     margin-bottom: 90px;
   }
 
-  .works-section h2{
+  .works-section h2 {
     margin-bottom: 68px;
   }
 
-  .img-box img{
+  .img-box li {
     width: 100%;
-    height: auto;
   }
 }
 
@@ -125,7 +140,7 @@ a {
   margin-bottom: 130px;
 }
 
-.news-section h2{
+.news-section h2 {
   margin-bottom: 65px;
 }
 
@@ -137,16 +152,16 @@ a {
   padding: 15px 0;
 }
 
-@media(max-width:600px){
-  .news-section{
+@media(max-width:600px) {
+  .news-section {
     margin-bottom: 70px;
   }
 
-  .news-section h2{
+  .news-section h2 {
     margin-bottom: 40px;
   }
 
-  .news-item{
+  .news-item {
     flex-direction: column;
     gap: 0;
   }
@@ -154,35 +169,35 @@ a {
 }
 
 /* contact */
-.contact-section{
+.contact-section {
   margin-bottom: 65px;
 }
 
-.contact-section h2{
+.contact-section h2 {
   margin-bottom: 65px;
 }
 
 .form-row {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
 }
 
 .form-row label {
-    text-align: left;
+  text-align: left;
 }
 
 .form-row input {
-    width: 730px;
-    height: 44px;
+  width: 730px;
+  height: 44px;
 }
 
 .form-row textarea {
-    width: 730px;
-    height: 166px;
+  width: 730px;
+  height: 166px;
 }
 
-button{
+button {
   display: block;
   margin: 30px auto 130px;
   width: 200px;
@@ -190,39 +205,40 @@ button{
   color: #fff;
   background-color: #000;
 }
-button:hover{
+
+button:hover {
   color: #000;
   background-color: #fff;
 }
 
-@media(max-width:600px){
-  .contact-section{
+@media(max-width:600px) {
+  .contact-section {
     margin-bottom: 70px;
-   }
+  }
 
-   .contact-section h2{
+  .contact-section h2 {
     margin-bottom: 40px;
-   }
+  }
 
-   .form-row{
+  .form-row {
     flex-direction: column;
-   }
+  }
 
-   .form-row input{
+  .form-row input {
     width: 100%;
-   }
+  }
 
-   .form-row textarea{
+  .form-row textarea {
     width: 100%;
-   }
+  }
 
-   button{
+  button {
     margin: 30px auto 70px;
-   }
+  }
 }
 
 /* footer */
-footer{
+footer {
   background-color: #000;
   color: #fff;
   text-align: center;
