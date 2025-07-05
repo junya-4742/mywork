@@ -94,15 +94,10 @@ a {
   margin-bottom: 68px;
 }
 
-.img-container {
+.img-box {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  justify-content: space-between;
-}
-
-.img-box {
-  display: contents;
 }
 
 .img-box li {
